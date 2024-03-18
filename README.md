@@ -86,7 +86,7 @@ httpd.serve_forever()
 ```
 
 ## OUTPUT:
-![Uploading Screenshot 2024-03-18 133935.png…]()
+![Screenshot 2024-03-18 133935](https://github.com/Kavi45-msk/simplewebserver/assets/147457752/f130288a-e4a6-4197-aff4-f8515a4dd28b)
 
 
 ## RESULT:
