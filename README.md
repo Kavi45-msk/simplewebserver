@@ -1,5 +1,5 @@
 # EX01 Developing a Simple Webserver
-## Date:04.03.2024
+## Date:
 
 ## AIM:
 To develop a simple webserver to serve html pages.
@@ -21,73 +21,7 @@ Serving the HTML pages.
 Testing the webserver.
 
 ## PROGRAM:
-```
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
-<!DOCTYPE html>
-<html>
-<head>
-<title>Software Companies</title>
-<head>
-<body bgcolor="orange">
-<table border="3" cellspacing="4" cellpadding="12" align="center">
-<caption>Top Five Revenue Generating Software Companies</caption>
-<tr>
-<th>Company</th>
-<th>Revenue</th>
-<th>Net worth</th>
-<th>Rank</th>
-</tr>
-<tr>
-<td>Amazon</td>
-<td>$427.56 Billion</td>
-<td>$1.82 Trillion</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Apple</td>
-<td>$335.85 Billion</td>
-<td>$2.64 Trillion</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Samsung</td>
-<td>$221.1 Billion</td>
-<td>$355 Billion</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Google</td>
-<td>$217.94 Billion</td>
-<td>$1.72 Trillion</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Microsoft</td>
-<td>$168.95 Billion</td>
-<td>$3.02 Trillion</td>
-<td>5</td>
-</tr>
-</table>
-</body>
-</html>
-"""
-class myhandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("request received")
-        self.send_response(200)
-        self.send_header('content-type', 'text/html; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-server_address = ('',8000)
-httpd = HTTPServer(server_address,myhandler)
-print("my webserver is running...")
-httpd.serve_forever()
-```
 
 ## OUTPUT:
-![Screenshot 2024-03-18 135507](https://github.com/Kavi45-msk/simplewebserver/assets/147457752/d2cd3f8c-c37f-435d-826c-5549e7a03804)
-![Screenshot 2024-03-12 113516](https://github.com/Kavi45-msk/simplewebserver/assets/147457752/a89cb786-b3d0-4dd9-8a9d-df2567bb27ed)
-
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
